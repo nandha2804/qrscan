@@ -1,0 +1,63 @@
+/* Attendance.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Font style */
+    background: linear-gradient(to right, #e1dee3, #20ba3a); /* Gradient background */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    max-width: 400px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    padding: 20px; /* Padding inside the container */
+}
+
+h2 {
+    color: #333; /* Dark text color */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+select, input {
+    width: 100%; /* Full width for inputs and selects */
+    padding: 10px; /* Padding inside */
+    margin-bottom: 15px; /* Space below each field */
+    border: 1px solid #ccc; /* Border for fields */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+select:focus, input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Button text size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor */
+    width: 100%; /* Full width for the button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.message {
+    text-align: center; /* Center message */
+    color: #d9534f; /* Red color for error messages */
+    margin-top: 15px; /* Space above message */
+}

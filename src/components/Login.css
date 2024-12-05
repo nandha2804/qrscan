@@ -1,0 +1,88 @@
+/* login.css */
+
+/* Center container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Soft transparent background */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels styling */
+.login-container label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input fields styling */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Error or success message styling */
+.login-container p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Small screen adjustments */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    .login-container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

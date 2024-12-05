@@ -1,0 +1,119 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Light gradient background */
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #74ebd5;
+}
+
+/* Container for each page */
+.container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form input[type="date"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Heading Styling */
+h1, h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .navbar-links a {
+        margin: 0.5rem 0;
+    }
+
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    button {
+        padding: 0.7rem;
+    }
+}
